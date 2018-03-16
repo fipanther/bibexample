@@ -1,0 +1,28 @@
+\documentclass[]{article}
+
+%opening
+\title{Making a bibiliography with LaTeX}
+\author{F. H. Panther}
+
+\usepackage{aasmacros}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Open the .tex file to see how the bibiliography is created!
+\end{abstract}
+
+\section{Some examples}
+\begin{itemize}
+	\item Citations are very important, even self-citations \cite{Panther2018b}! This bibliography is in IEEE style, but if you're writing a journal article you should always use the journal citation style. Here's another citation! \cite{Siegert16}
+	\item Even if you have all your references in your .blb file (open the .bib file in this directory!) only the ones you explicitly cite in the paper will appear in the references section!
+	\item Included in the source code here is a file called \texttt{aasmacros.sty} - always include this in your directory when using a bibliography so that the journal names come out looking ok! Open the tex file to see how to import this package!
+	\item Hot Tip: When you upload something to arXiv, don't upload your .bib file. Instead, when you compile your paper you will find that a file called 'yourtexfilename.bbl" file appears. To upload to arXiv, only upload the .tex file, the .bbl file and any figures (which usually MUST be either .eps or .ps files).  
+\end{itemize}
+
+
+\bibliography{bibiliographyfilename}
+\bibliographystyle{ieeetr}
+\end{document}
